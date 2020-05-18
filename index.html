@@ -5,22 +5,32 @@
   * { font-family: sans-serif; }
   a { text-decoration: none; }
   a:hover { text-decoration: underline; color: red; }
-  li { position: relative; }        
   li .pic { display: none; }
   li:hover .pic {
       display: block;
-      position: fixed;
+      position: absolute;
       left: 45%;
-      top: 10%;
+      top: 5%;
+      background: white;        
+      height: 90%;
+      min-width: 50%;
+      overflow: hidden;
   }
-  .pic img { max-width: 90% }        
+  .pic img { max-width: 90%;
+        }        
   .left { width: 40%; }
+  ul { margin-top: 0; padding-top: 0; }        
+  .instruct { position: absolute; width: 12em; top: 20%; left: 50%; 
+        font-size: 160%; z-index: -5; text-align: center;
+        font-weight: bold; color: #888; }
+  body { max-width: 14in; position: relative; margin: 1em auto }
 </style>
 </head><body>
 
+<div class="instruct">Hover on an item for a visual summary</div>        
 <div class="left">
 
-Web things
+<div>Web things</div>
 
 <ul>
 <li><a target="_mnwl" href="http://mnwetlandrestore.org/map-tool/">Interactive scenario mapping tool.
@@ -36,7 +46,23 @@ for wetland restoration projects.</p><img src="./img/mnrw.png"/></div>
 </li>
 </ul>
 
-Selected presentations<br/>(use space to advance slides)
+<div>Software</div>
+
+<ul>
+<li><a target="_mnwl" href="https://github.com/tbnorth/itassets">IT infrastructure mapping
+    </a>
+    <div class="pic"><p>Tool to map and analyze IT infrastructure.  Names replaced
+            with types below for explanation.</p><img src="./img/assets.png"/></div>
+</li>
+<li><a target="_fs" href="https://github.com/tbnorth/funcsplit">Find sweet spots for splitting long Python functions.
+    </a>
+    <div class="pic"><p>Uses Abstract Syntax Tree (AST) analyses to find the
+            best place to split a long function. E.g. line 761 in the example needs
+            only a single variable to be passed.</p><img src="./img/funcsplit.png"/></div>
+</li>
+</ul>
+
+<div>Selected presentations<br/>(use space to advance slides)</div>
 
 <ul>
 <li><a target="_sdde" href="./img/iaglr2015post.png">Poster - data management strategies</a>
@@ -53,13 +79,14 @@ Selected presentations<br/>(use space to advance slides)
 </li>
 <!-- https://youtu.be/8LHHP5tMndU -->
 <li><a target="_pd" href="https://tbnorth.github.io/llo_drifters">Low cost current mapping drifters, PyBoard, MicroPython</a>
-        <div class="pic"><p>A project to produce low cost current mapping equipment.</p><!--<img src="#"/>--></div>
+        <div class="pic"><p>A project to produce low cost current mapping equipment
+        with multiple software components (IoT networking, visualization, in-field base-station GUI).</p><img src="./img/IMG_20161117_141344.jpg"/></div>
 <li><a target="_pn3" href="https://tbnorth.github.io/nnnmp0iaglr">Nearshore nutrient circulation model</a>
     <div class="pic"><p>Modeling nearshore phosphorus movement with 4D visualization.</p><img src="./img/pres_n3.jpg"/></div>
 </li>
 </ul>
 
-JavaScript apps. hosted on GitHub
+<div>JavaScript apps. hosted on GitHub</div>
 
 <ul>
 <li><a target="_tf" href="https://tbnorth.github.io/faders/" target="_blank">Fading dots JavaScript flow map demo</a>
@@ -74,14 +101,14 @@ JavaScript apps. hosted on GitHub
 <li><a target="_te" href="https://tbnorth.github.io/email_blocks/" target="_blank">E-mail clean / list send</a>
     <div class="pic"><p>Turns that jumbled Excel column of variously formatted
             and duplicated emails into a unique list of proper emails in blocks
-            acceptable to you ISP.</p></div>
+            acceptable to you ISP.</p><img src="./img/email.png"/></div>
 </li>
 <li><a target="_td" href="https://tbnorth.github.io/manage_dojo_require/" target="_blank">Manage <code>require()</code> lists for Dojo etc.</a>
     <div class="pic"><p>An old utility useful developing ESRI ArcGIS web apps.</p><img src="./img/tool_dojo.png"/></div>
 </li>
 </ul>
 
-Videos / visualizations
+<div>Videos / visualizations</div>
 
 <ul>
 <li><a target="_vp" href="https://www.youtube.com/watch?v=Lt_7mNpsapQ" target="_blank">Plume visualization</a>
