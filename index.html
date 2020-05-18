@@ -2,46 +2,104 @@
 <head>
 <title>Terry Brown, @tbnorth's GitHub web pages</title>
 <style>
-  * {font-family: sans-serif;}
-  a {text-decoration: none;}
-  a:hover {text-decoration: underline; color: red;}
+  * { font-family: sans-serif; }
+  a { text-decoration: none; }
+  a:hover { text-decoration: underline; color: red; }
+  li { position: relative; }        
+  li .pic { display: none; }
+  li:hover .pic {
+      display: block;
+      position: fixed;
+      left: 45%;
+      top: 10%;
+  }
+  .pic img { max-width: 90% }        
+  .left { width: 40%; }
 </style>
 </head><body>
 
+<div class="left">
+
 Web things
+
 <ul>
-<li><a href="https://alpha.inkscape.org/bug-migration/">Gamification of migration of 4500 issues from Launchpad to GitLab
-- site generation, issue harvesting via API from both sites, coding - i.e. everything except the graphics.</a></li>
-<li><a href="http://mnwetlandrestore.org/map-tool/">Interactive map tool with dynamic calculation of raster layers
-and network tracing.</a></li>
+<li><a target="_mnwl" href="http://mnwetlandrestore.org/map-tool/">Interactive scenario mapping tool.
+    </a>
+    <div class="pic"><p>Interactive mapping tool which lets the user define scenarios
+for wetland restoration projects.</p><img src="./img/mnrw.png"/></div>
+</li>
+<li><a target="_ib" href="https://alpha.inkscape.org/bug-migration/">Gamification of
+        migration of 4500 issues from Launchpad to GitLab.</a>
+    <div class="pic"><p>Site generation,
+        issue harvesting via API from both sites, coding - i.e. everything
+        except the graphics.</p><img src="./img/inkbugs.png"/></div>
+</li>
 </ul>
 
-Selected presentations (use space to advance slides)
+Selected presentations<br/>(use space to advance slides)
+
 <ul>
-<li><a href="./img/iaglr2015post.png">Poster - data management strategies</a></li>
-<li><a href="https://tbnorth.github.io/PyCoPGit">Intro. to git for scientists using Python</a></li>
-<li><a href="https://tbnorth.github.io/iaglr2018">Agent based modeling of lake water quality</a></li>
-<li><a href="https://tbnorth.github.io/llo_drifters">Low cost current mapping drifters, PyBoard, MicroPython</a></li>
-<li><a href="https://tbnorth.github.io/nnnmp0iaglr">Nearshore nutrient circulation model</a></li>
+<li><a target="_sdde" href="./img/iaglr2015post.png">Poster - data management strategies</a>
+        <div class="pic"><p>Describes various options for managing research data.  Won
+        "best coffee shop poster" category :-)</p><img src="./img/iaglr2015post.png"/></div>
+</li>
+<li><a target="_pp" href="https://tbnorth.github.io/PyCoPGit">Intro. to git for scientists using Python</a>
+        <div class="pic"><p>Git is useful for data management and research
+        reproducibility too.</p><img src="./img/pres_git.png"/></div>
+</li>
+<li><a target="_pa" href="https://tbnorth.github.io/iaglr2018">Agent based modeling of lake water quality</a>
+        <div class="pic"><p>Simulating the origin of nearshore water using agent based modeling
+        and distributed computing.</p><img src="./img/pres_agents.png"/></div>
+</li>
+<!-- https://youtu.be/8LHHP5tMndU -->
+<li><a target="_pd" href="https://tbnorth.github.io/llo_drifters">Low cost current mapping drifters, PyBoard, MicroPython</a>
+        <div class="pic"><p>A project to produce low cost current mapping equipment.</p><!--<img src="#"/>--></div>
+<li><a target="_pn3" href="https://tbnorth.github.io/nnnmp0iaglr">Nearshore nutrient circulation model</a>
+    <div class="pic"><p>Modeling nearshore phosphorus movement with 4D visualization.</p><img src="./img/pres_n3.jpg"/></div>
+</li>
 </ul>
 
 JavaScript apps. hosted on GitHub
+
 <ul>
-<li><a href="https://tbnorth.github.io/faders/" target="_blank">Fading dots JavaScript flow map demo</a></li>
-<li><a href="https://tbnorth.github.io/asinb/" target="_blank">React / Highcharts function demo</a></li>
-<li><a href="https://tbnorth.github.io/rainfallcalc/" target="_blank">Rainfall volume calculator</a></li>
-<li><a href="https://tbnorth.github.io/email_blocks/" target="_blank">E-mail clean / list send</a></li>
-<li><a href="https://tbnorth.github.io/manage_dojo_require/" target="_blank">Manage <code>require()</code> lists for Dojo etc.</a></li>
+<li><a target="_tf" href="https://tbnorth.github.io/faders/" target="_blank">Fading dots JavaScript flow map demo</a>
+    <div class="pic"><p>A small JavaScript canvas / image demo.</p><img src="./img/faders.png"/></div>
+</li>
+<li><a target="_tl" href="https://tbnorth.github.io/asinb/" target="_blank">React / Highcharts function demo</a>
+    <div class="pic"><p>Visualize the different forms a model term can take.</p><img src="./img/tool_loadest.png"/></div>
+</li>
+<li><a target="_tr" href="http://tbnorth.github.io/rainfallcalc/" target="_blank">Rainfall volume calculator</a>
+    <div class="pic"><p>Calculate rainfall volume over different areas in different units.</p><img src="./img/tool_rainfall.png"/></div>
+</li>
+<li><a target="_te" href="https://tbnorth.github.io/email_blocks/" target="_blank">E-mail clean / list send</a>
+    <div class="pic"><p>Turns that jumbled Excel column of variously formatted
+            and duplicated emails into a unique list of proper emails in blocks
+            acceptable to you ISP.</p></div>
+</li>
+<li><a target="_td" href="https://tbnorth.github.io/manage_dojo_require/" target="_blank">Manage <code>require()</code> lists for Dojo etc.</a>
+    <div class="pic"><p>An old utility useful developing ESRI ArcGIS web apps.</p><img src="./img/tool_dojo.png"/></div>
+</li>
 </ul>
 
 Videos / visualizations
+
 <ul>
-<li><a href="https://www.youtube.com/watch?v=Lt_7mNpsapQ" target="_blank">Plume visualization</a></li>
-<li><a href="https://www.youtube.com/watch?v=LKLIabY-y6c" target="_blank">2010 NOAA data, faders</a></li>
-<li><a href="https://www.youtube.com/watch?v=AJpi2ShsUfg" target="_blank">Animated line art</a></li>
+<li><a target="_vp" href="https://www.youtube.com/watch?v=Lt_7mNpsapQ" target="_blank">Plume visualization</a>
+    <div class="pic"><p>Blender visualization of river plume entering lake.</p><img src="./img/plumeviz.png"/></div>
+</li>
+<li><a target="_vn" href="https://www.youtube.com/watch?v=LKLIabY-y6c" target="_blank">2010 NOAA data, faders</a>
+    <div class="pic"><p>Animated <code>matplotlib</code> output showing lake currents.</code></p><img src="./img/lm_faders.png"/></div>
+</li>
+<li><a target="_vl" href="https://www.youtube.com/watch?v=AJpi2ShsUfg" target="_blank">Animated line art</a>
+    <div class="pic"><p>Rendered in Blender to illustrate model function.</p><img src="./img/lineart.png"/></div>
+</li>
 </ul>
 
 <p>
 Above content by Terry Brown, <a href="mailto:terrynbrown@gmail.com">terrynbrown@gmail.com</a>, more software
 etc. <a href="https://github.com/tbnorth">on GitHub</a>.  <a href="https://twitter.com/tbnorth">@tbnorth</a>.
-</body></html>
+</p>
+
+</div>
+</body>
+</html>
