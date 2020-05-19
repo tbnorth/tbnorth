@@ -5,51 +5,100 @@
 <!-- needed to stop Android Chrome playing with relative font sizes -->
 <meta name="viewport" content="width=device-width">
 <style>
-  * { font-family: sans-serif; }
-  a { text-decoration: none; }
-  a:hover { text-decoration: underline; color: red; }
-  li .pic { display: none; }
-  li .lnk { opacity: 0.3; }
-  li:hover .lnk { opacity: 1; }
-  li:hover { background: #ffd059; }
-  li:hover .pic {
-      display: block;
-      position: absolute;
-      left: 45%;
-      top: 5%;
-      background: white;
-      height: 90%;
-      min-width: 50%;
-      overflow: hidden;
+  * {
+          font-family: sans-serif;
   }
-  .pic img { max-width: 90%;
-        }
-  .left { width: 40%; height: 100%; overflow: auto; }
-  ul { margin-top: 0; padding-top: 0; }
-  .instruct { position: absolute; width: 12em; top: 20%; left: 50%;
-        font-size: 160%; z-index: -5; text-align: center;
-        font-weight: bold; color: #888; }
-  body { max-width: 14in; position: relative; margin: 1em auto; height: 100%; margin: 1ex; }
-  html { height: 100%; }
+  a {
+          text-decoration: none;
+  }
+  a:hover
+          { text-decoration: underline; color: red;
+  }
+  li .pic {
+          display: none;
+  }
+  li .lnk { opacity: 0.3;
+  }
+  li:hover .lnk {
+          opacity: 1; }
+  li:hover {
+          background: #ffd059;
+  }
+  li:hover .pic {
+          display: block;
+          position: absolute;
+          left: 45%;
+          top: 5%;
+          background: white;
+          height: 90%;
+          min-width: 50%;
+          overflow: hidden;
+  }
 
-  @media (orientation: portrait) {  
+  .pic img {
+          max-width: 90%;
+  }
+  .left {
+          width: 40%;
+          height: 100%;
+          overflow: auto;
+  }
+  ul {
+          margin-top: 0;
+          padding-top: 0;
+  }
+  .instruct {
+          position: absolute;
+          width: 12em;
+          top: 20%;
+          left: 50%;
+          font-size: 160%;
+          z-index: -5;
+          text-align: center;
+          font-weight: bold;
+          color: #888;
+  }
+  body {
+          max-width: 14in;
+          position: relative;
+          margin: auto;
+          height: 100%;
+  }
+  html {
+          height: 100%;
+  }
+
+@media (hover: none) {
+  li:hover .pic {
+          overflow: auto;
+  }
+}
+
+@media (orientation: portrait) {  
   .left {
           width: 100%;
           height: 40%;
           overflow: auto;
           border-bottom: solid 1px #ffd059;
+          padding: 0 1ex;
   }
   li:hover .pic {
           left: 0;
           top: 41%;
           text-align: center;
+          width: 100%;
+          overflow: auto;
   }
   .instruct {
           top: 60%;
           left: 0;
           width: 100%;
   }
-  .pic img { max-height: 50%; margin: auto; display: block; }
+  .pic img {
+          max-height: 50%;
+          margin: auto;
+          display: block;
+  }
 }
 </style>
 </head><body>
@@ -58,17 +107,20 @@
 <div class="left">
 
 <p>
-Content by Terry Brown, <a href="mailto:terrynbrown@gmail.com">terrynbrown@gmail.com</a>, more software
-etc. <a href="https://github.com/tbnorth">on GitHub</a>.  <a href="https://twitter.com/tbnorth">@tbnorth</a>.
+Content by Terry Brown,
+<a href="mailto:terrynbrown@gmail.com">terrynbrown@gmail.com</a>,
+more software etc. <a href="https://github.com/tbnorth">on GitHub</a>.
+<a href="https://twitter.com/tbnorth">@tbnorth</a>.
 </p>
 
 <div>Web things</div>
 
 <ul>
-        <li>Interactive scenario mapping tool. <span class="lnk">[<a target="t_mnwl" href="http://mnwetlandrestore.org/map-tool/">link</a>]</span>
+  <li>Interactive scenario mapping tool.
+    <span class="lnk">[<a target="t_mnwl" href="http://mnwetlandrestore.org/map-tool/">link</a>]</span>
     <div class="pic"><p>Interactive mapping tool which lets the user define scenarios
-for wetland restoration projects.</p><img src="./img/mnrw.png" alt="GUI control element over a map."/></div>
-</li>
+    for wetland restoration projects.</p><img src="./img/mnrw.png" alt="GUI control element over a map."/></div>
+  </li>
 <li>Gamification of
         migration of 4500 issues from Launchpad to GitLab. <span class="lnk">[<a target="t_ib" href="https://alpha.inkscape.org/bug-migration/">link</a>]</span>
     <div class="pic"><p>Site generation,
