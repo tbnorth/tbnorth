@@ -2,6 +2,8 @@
 <html>
 <head>
 <title>Terry Brown, @tbnorth's GitHub web pages</title>
+<!-- needed to stop Android Chrome playing with relative font sizes -->
+<meta name="viewport" content="width=device-width">
 <style>
   * { font-family: sans-serif; }
   a { text-decoration: none; }
@@ -22,18 +24,43 @@
   }
   .pic img { max-width: 90%;
         }
-  .left { width: 40%; }
+  .left { width: 40%; height: 100%; overflow: auto; }
   ul { margin-top: 0; padding-top: 0; }
   .instruct { position: absolute; width: 12em; top: 20%; left: 50%;
         font-size: 160%; z-index: -5; text-align: center;
         font-weight: bold; color: #888; }
-  body { max-width: 14in; position: relative; margin: 1em auto; height: 100%; }
+  body { max-width: 14in; position: relative; margin: 1em auto; height: 100%; margin: 1ex; }
   html { height: 100%; }
+
+  @media (orientation: portrait) {  
+  .left {
+          width: 100%;
+          height: 40%;
+          overflow: auto;
+          border-bottom: solid 1px #ffd059;
+  }
+  li:hover .pic {
+          left: 0;
+          top: 41%;
+          text-align: center;
+  }
+  .instruct {
+          top: 60%;
+          left: 0;
+          width: 100%;
+  }
+  .pic img { max-height: 50%; margin: auto; display: block; }
+}
 </style>
 </head><body>
 
 <div class="instruct">Hover / tap on an item for a visual summary</div>
 <div class="left">
+
+<p>
+Content by Terry Brown, <a href="mailto:terrynbrown@gmail.com">terrynbrown@gmail.com</a>, more software
+etc. <a href="https://github.com/tbnorth">on GitHub</a>.  <a href="https://twitter.com/tbnorth">@tbnorth</a>.
+</p>
 
 <div>Web things</div>
 
@@ -127,10 +154,6 @@ for wetland restoration projects.</p><img src="./img/mnrw.png" alt="GUI control 
 </li>
 </ul>
 
-<p>
-Above content by Terry Brown, <a href="mailto:terrynbrown@gmail.com">terrynbrown@gmail.com</a>, more software
-etc. <a href="https://github.com/tbnorth">on GitHub</a>.  <a href="https://twitter.com/tbnorth">@tbnorth</a>.
-</p>
 
 </div>
 </body>
