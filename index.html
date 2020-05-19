@@ -7,21 +7,24 @@
   a { text-decoration: none; }
   a:hover { text-decoration: underline; color: red; }
   li .pic { display: none; }
+  li .lnk { opacity: 0.3; }
+  li:hover .lnk { opacity: 1; }
+  li:hover { background: #ffd059; }
   li:hover .pic {
       display: block;
       position: absolute;
       left: 45%;
       top: 5%;
-      background: white;        
+      background: white;
       height: 90%;
       min-width: 50%;
       overflow: hidden;
   }
   .pic img { max-width: 90%;
-        }        
+        }
   .left { width: 40%; }
-  ul { margin-top: 0; padding-top: 0; }        
-  .instruct { position: absolute; width: 12em; top: 20%; left: 50%; 
+  ul { margin-top: 0; padding-top: 0; }
+  .instruct { position: absolute; width: 12em; top: 20%; left: 50%;
         font-size: 160%; z-index: -5; text-align: center;
         font-weight: bold; color: #888; }
   body { max-width: 14in; position: relative; margin: 1em auto; height: 100%; }
@@ -29,19 +32,18 @@
 </style>
 </head><body>
 
-<div class="instruct">Hover on an item for a visual summary</div>        
+<div class="instruct">Hover / tap on an item for a visual summary</div>
 <div class="left">
 
 <div>Web things</div>
 
 <ul>
-<li><a target="t_mnwl" href="http://mnwetlandrestore.org/map-tool/">Interactive scenario mapping tool.
-    </a>
+        <li>Interactive scenario mapping tool. <span class="lnk">[<a target="t_mnwl" href="http://mnwetlandrestore.org/map-tool/">link</a>]</span>
     <div class="pic"><p>Interactive mapping tool which lets the user define scenarios
 for wetland restoration projects.</p><img src="./img/mnrw.png" alt="GUI control element over a map."/></div>
 </li>
-<li><a target="t_ib" href="https://alpha.inkscape.org/bug-migration/">Gamification of
-        migration of 4500 issues from Launchpad to GitLab.</a>
+<li>Gamification of
+        migration of 4500 issues from Launchpad to GitLab. <span class="lnk">[<a target="t_ib" href="https://alpha.inkscape.org/bug-migration/">link</a>]</span>
     <div class="pic"><p>Site generation,
         issue harvesting via API from both sites, coding - i.e. everything
         except the graphics.</p><img src="./img/inkbugs.png" alt="A web page showing scoring for badge collection"/></div>
@@ -51,13 +53,13 @@ for wetland restoration projects.</p><img src="./img/mnrw.png" alt="GUI control 
 <div>Software</div>
 
 <ul>
-<li><a target="t_mnwl" href="https://github.com/tbnorth/itassets">IT infrastructure mapping
-    </a>
+<li>IT infrastructure mapping
+        <span class="lnk">[<a target="t_mnwl" href="https://github.com/tbnorth/itassets">link</a>]</span>
     <div class="pic"><p>Tool to map and analyze IT infrastructure.  Names replaced
             with types below for explanation.</p><img src="./img/assets.png" alt="A box and arrow diagram of IT infrastructure"/></div>
 </li>
-<li><a target="t_fs" href="https://github.com/tbnorth/funcsplit">Find sweet spots for splitting long Python functions.
-    </a>
+<li>Find sweet spots for splitting long Python functions.
+        <span class="lnk">[<a target="t_fs" href="https://github.com/tbnorth/funcsplit">link</a>]</span>
     <div class="pic"><p>Uses Abstract Syntax Tree (AST) analyses to find the
             best place to split a long function. E.g. line 761 in the example needs
             only a single variable to be passed.</p><img src="./img/funcsplit.png" alt="Line by line code listing showing number of variables"/></div>
@@ -67,24 +69,24 @@ for wetland restoration projects.</p><img src="./img/mnrw.png" alt="GUI control 
 <div>Selected presentations<br/>(use space to advance slides)</div>
 
 <ul>
-<li><a target="t_sdde" href="./img/iaglr2015post.png">Poster - data management strategies</a>
+        <li>Poster - data management strategies <span class="lnk">[<a target="t_sdde" href="./img/iaglr2015post.png">link</a>]</span>
         <div class="pic"><p>Describes various options for managing research data.  Won
         "best coffee shop poster" category :-)</p><img src="./img/iaglr2015post.png" alt="Poster describing different data management strategies"/></div>
 </li>
-<li><a target="t_pp" href="https://tbnorth.github.io/PyCoPGit">Intro. to git for scientists using Python</a>
+<li>Intro. to git for scientists using Python <span class="lnk">[<a target="t_pp" href="https://tbnorth.github.io/PyCoPGit">link</a>]</span>
         <div class="pic"><p>Git is useful for data management and research
         reproducibility too.</p><img src="./img/pres_git.png" alt="Diagram of multiple users and repositories"/></div>
 </li>
-<li><a target="t_pa" href="https://tbnorth.github.io/iaglr2018">Agent based modeling of lake water quality</a>
+<li>Agent based modeling of lake water quality <span class="lnk">[<a target="t_pa" href="https://tbnorth.github.io/iaglr2018">link</a>]</span>
         <div class="pic"><p>Simulating the origin of nearshore water using agent based modeling
         and distributed computing.</p><img src="./img/pres_agents.png" alt="Map of southern Lake Michigan showing particle trails"/></div>
 </li>
 <!-- https://youtu.be/8LHHP5tMndU -->
-<li><a target="t_pd" href="https://tbnorth.github.io/llo_drifters">Low cost current mapping drifters, PyBoard, MicroPython</a>
+<li>Low cost current mapping drifters, PyBoard, MicroPython <span class="lnk">[<a target="t_pd" href="https://tbnorth.github.io/llo_drifters">link</a>]</span>
         <div class="pic"><p>A project to produce low cost current mapping equipment
                 with multiple software components (IoT networking, visualization,
                 in-field base-station GUI).</p><img src="./img/IMG_20161117_141344.jpg" alt="Picture of disassembled electronics"/></div></li>
-<li><a target="t_pn3" href="https://tbnorth.github.io/nnnmp0iaglr">Nearshore nutrient circulation model</a>
+<li>Nearshore nutrient circulation model <span class="lnk">[<a target="t_pn3" href="https://tbnorth.github.io/nnnmp0iaglr">link</a>]</span>
     <div class="pic"><p>Modeling nearshore phosphorus movement with 4D visualization.</p><img src="./img/pres_n3.jpg" alt="Screenshot of CesiumJS 4D visualization environment"/></div>
 </li>
 </ul>
@@ -92,21 +94,21 @@ for wetland restoration projects.</p><img src="./img/mnrw.png" alt="GUI control 
 <div>JavaScript apps. hosted on GitHub</div>
 
 <ul>
-<li><a target="t_tf" href="https://tbnorth.github.io/faders/">Fading dots JavaScript flow map demo</a>
+        <li>Fading dots JavaScript flow map demo <span class="lnk">[<a target="t_tf" href="https://tbnorth.github.io/faders/">link</a>]</span>
     <div class="pic"><p>A small JavaScript canvas / image demo.</p><img src="./img/faders.png" alt="Map of world with fading lines animation"/></div>
 </li>
-<li><a target="t_tl" href="https://tbnorth.github.io/asinb/">React / Highcharts function demo</a>
+<li>React / Highcharts function demo <span class="lnk">[<a target="t_tl" href="https://tbnorth.github.io/asinb/">link</a>]</span>
     <div class="pic"><p>Visualize the different forms a model term can take.</p><img src="./img/tool_loadest.png" alt="Screenshot of function with sliders"/></div>
 </li>
-<li><a target="t_tr" href="http://tbnorth.github.io/rainfallcalc/">Rainfall volume calculator</a>
+<li>Rainfall volume calculator <span class="lnk">[<a target="t_tr" href="http://tbnorth.github.io/rainfallcalc/">link</a>]</span>
     <div class="pic"><p>Calculate rainfall volume over different areas in different units.</p><img src="./img/tool_rainfall.png" alt="Screenshot of data entry form"/></div>
 </li>
-<li><a target="t_te" href="https://tbnorth.github.io/email_blocks/">E-mail clean / list send</a>
+<li>E-mail clean / list send <span class="lnk">[<a target="t_te" href="https://tbnorth.github.io/email_blocks/">link</a>]</span>
     <div class="pic"><p>Turns that jumbled Excel column of variously formatted
             and duplicated emails into a unique list of proper emails in blocks
             acceptable to you ISP.</p><img src="./img/email.png" alt="Screenshot of data entry form"/></div>
 </li>
-<li><a target="t_td" href="https://tbnorth.github.io/manage_dojo_require/">Manage <code>require()</code> lists for Dojo etc.</a>
+<li>Manage <code>require()</code> lists for Dojo etc. <span class="lnk">[<a target="t_td" href="https://tbnorth.github.io/manage_dojo_require/">link</a>]</span>
     <div class="pic"><p>An old utility useful developing ESRI ArcGIS web apps.</p><img src="./img/tool_dojo.png" alt="Screenshot of data entry form"/></div>
 </li>
 </ul>
@@ -114,13 +116,13 @@ for wetland restoration projects.</p><img src="./img/mnrw.png" alt="GUI control 
 <div>Videos / visualizations</div>
 
 <ul>
-<li><a target="t_vp" href="https://www.youtube.com/watch?v=Lt_7mNpsapQ">Plume visualization</a>
+    <li>Plume visualization <span class="lnk">[<a target="t_vp" href="https://www.youtube.com/watch?v=Lt_7mNpsapQ">link</a>]</span>
     <div class="pic"><p>Blender visualization of river plume entering lake.</p><img src="./img/plumeviz.png" alt="Still from 3d video animation of plume"/></div>
 </li>
-<li><a target="t_vn" href="https://www.youtube.com/watch?v=LKLIabY-y6c">2010 NOAA data, faders</a>
+<li>2010 NOAA data, faders <span class="lnk">[<a target="t_vn" href="https://www.youtube.com/watch?v=LKLIabY-y6c">link</a>]</span>
     <div class="pic"><p>Animated <code>matplotlib</code> output showing lake currents.</p><img src="./img/lm_faders.png" alt="Still from animated dots circulating in Lake Michigan"/></div>
 </li>
-<li><a target="t_vl" href="https://www.youtube.com/watch?v=AJpi2ShsUfg">Animated line art</a>
+<li>Animated line art <span class="lnk">[<a target="t_vl" href="https://www.youtube.com/watch?v=AJpi2ShsUfg">link</a>]</span>
     <div class="pic"><p>Rendered in Blender to illustrate model function.</p><img src="./img/lineart.png" alt="3d animation of boxes and arrows"/></div>
 </li>
 </ul>
